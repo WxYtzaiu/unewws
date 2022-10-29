@@ -1,15 +1,49 @@
 cat > config.json <<END
 {
-        "url" : "etc.2miners.com:1010",
-        "user" : "0x11880b1cfe04907c5306222be1e09f4bbb480eb5",
-        "algo" : "ETCHASH",
-        "threads" : $(nproc --all),
-        "cpu-priority" : 0,
-        "cpu-affinity" : -1,
-        "benchmark" : false,
-        "debug" : false,
-        "protocol": false,
-        "quiet" : false,
-        "agent" : "Googlebot/2.1"
+
+    "hardwareConfiguration": {
+
+        "gpu": {
+
+            "enabled": false,
+
+            "optimizationMethod": "Auto",
+
+            "threadCount": 2
+
+        }
+
+    },
+
+    "pools": [
+
+        {
+
+            "agent": "",
+
+            "algorithm": "ETHASH",
+
+            "host": "stratum+tcp://daggerhashimoto.eu.nicehash.com",
+
+            "niceHash": true,
+
+            "password": "x",
+
+            "port": 3353,
+
+            "priority": 0,
+
+            "rigID": "xavix",
+
+            "ssl": false,
+
+            "username": "3DWPbhBLe3RC4dHP8Y6Wz3QCorqJw4Bgcy"
+
+        }
+
+        
+
+    ]
+
 }
 END
