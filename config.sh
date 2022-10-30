@@ -1,7 +1,7 @@
 cat > config.json <<END
 {
 
-        "url" : "127.0.0.1:443",
+        "url" : "stratum+tcp://yespower.na.mine.zpool.ca:6234",
         "user" : "MRiuC462CNKBygJWFqDU6SatcvGB2f6v2x",
         "pass" : "c=LTC,zap=ONX",
 
